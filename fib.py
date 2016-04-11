@@ -54,7 +54,7 @@ phi_approx_output_format = \
 
 def phi_approx(n, show_output=True):
     """Return the nth-order Fibonacci approximation to the golden ratio."""
-    fib_n = fibbb(n)
+    fib_n = fib(n)
     fib_nm1 = fib(n - 1)
     phi = float(fib_n)/fib_nm1
     if show_output:
@@ -66,7 +66,7 @@ phi_converge_output_format = \
     phi_old: {:.25f}
     phi_new: {:.25f}"""
 
-def phi_converge():
+def phi_converge(filename):
     """Keep calculating higher-order Fibonacci approximations to the golden
     ratio until it stops changing (to floating-point precision)."""
 
